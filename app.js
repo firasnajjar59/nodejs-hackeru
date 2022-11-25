@@ -1,6 +1,5 @@
 require("./DB/connectToDb");
 // require("./primeryData/primeryCards")();
-const cjs=require("cjs")
 const express = require("express");
 const app = express();
 
@@ -19,6 +18,8 @@ app.get("/", async (req, res) => {
   return res.render("home");
 });
 const PORT = process.env.PORT || 8181;
-app.listen(PORT, () =>
-  console.log(chalk.blueBright.bold(`server run on: http://:localhost:${PORT}`))
+app.listen(PORT, (err) =>{
+  if(err)console.log(err);
+    console.log(chalk.blueBright.bold(`server run on:port ${PORT}`))
+}
 );
