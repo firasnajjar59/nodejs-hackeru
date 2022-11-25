@@ -4,7 +4,7 @@
   "description": "Business card app for businesses",
   "main": "app.js",
   "scripts": {
-    "start": "node .",
+    "start": "node app.js",
     "dev": "nodemon ."
   },
   "keywords": [
