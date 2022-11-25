@@ -3,6 +3,9 @@
   "version": "1.3.0",
   "description": "Business card app for businesses",
   "main": "app.js",
+  "engines": {
+    "node": "16.16.0"
+  },
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon ."
