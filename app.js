@@ -16,7 +16,7 @@ app.use(express.json());
 app.use("/api/users", usersRouter);
 app.use("/api/cards", cardsRouter);
 app.get("/", async (req, res) => {
-  return res.json({ messege: "hi" });
+  return res.render("home");
 });
 const PORT = process.env.PORT || 8181;
 app.listen(PORT, () =>
